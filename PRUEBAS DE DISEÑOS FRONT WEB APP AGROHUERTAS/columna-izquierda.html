@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <title>Columna Izquierda</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      .row {
+        height: 100%;
+      }
+
+      .scrollable {
+        overflow-y: auto;
+        max-height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Columna izquierda -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 scrollable">
+          <h2>Usuarios</h2>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Buscar por nombre, fecha, alta o baja"
+              aria-label="Buscar por nombre, fecha, alta o baja"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">
+                Buscar
+              </button>
+            </div>
+          </div>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John Doe</td>
+                <td>john.doe@example.com</td>
+                <td>
+                  <div class="btn-group" role="group" aria-label="Acciones">
+                    <button type="button" class="btn btn-danger">
+                      Eliminar
+                    </button>
+                    <button type="button" class="btn btn-info">Ascender</button>
+                    <button type="button" class="btn btn-primary">
+                      Modificar
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Jane Smith</td>
+                <td>jane.smith@example.com</td>
+                <td>
+                  <div class="btn-group" role="group" aria-label="Acciones">
+                    <button type="button" class="btn btn-danger">
+                      Eliminar
+                    </button>
+                    <button type="button" class="btn btn-info">Ascender</button>
+                    <button type="button" class="btn btn-primary">
+                      Modificar
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="button" class="btn btn-success">Registrarse</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

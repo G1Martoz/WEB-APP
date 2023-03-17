@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi página</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      .row {
+        height: 100%;
+      }
+
+      .scrollable {
+        overflow-y: auto;
+        max-height: 100%;
+      }
+      .textarea-container textarea {
+        width: 80%;
+        margin: 0 auto;
+      }
+      h2 {
+        text-align: center;
+      }
+      .form-control {
+        width: 10cm;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Columna izquierda -->
+        <div class="col-lg-3 scrollable">
+          <h2>Usuarios</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John Doe</td>
+                <td>john.doe@example.com</td>
+              </tr>
+              <tr>
+                <td>Jane Smith</td>
+                <td>jane.smith@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Columna central -->
+        <div class="col-md-6 scrollable">
+          <!-- Encabezado & Crear Publicacion -->
+          <div class="mx-auto">
+            <h2>FORO AGROHUERTAS ECOLOGICAS</h2>
+            <div class="card mt-3">
+              <div style="border-radius: 10px; border: 1px solid gray; padding: 10px;">
+                <h5 class="card-title text-center">Crear publicación</h5>
+                <form>
+                  <div class="form-group">
+                    <label for="titulo">Título:</label>
+                    <input type="text" class="form-control" id="titulo" />
+                  </div>
+                  <div class="form-group">
+                    <label for="texto">Texto:</label>
+                    <textarea
+                      class="form-control"
+                      id="texto"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="imagen">Imagen:</label>
+                    <input type="file" class="form-control-file" id="imagen" />
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Publicar
+                  </button>
+                </form>
+              </div>
+            </div>
+            <hr />
+            <hr />
+            <!-- Tarjeta 1 -->
+            <div class="card my-4">
+              <div class="card-body">
+                <h5 class="card-title">Título de la tarjeta 1</h5>
+                <p class="card-text">Texto o descripción de la tarjeta 1.</p>
+                <img
+                  src="fresas.jpg"
+                  alt="Imagen de la tarjeta 1"
+                  class="img-fluid"
+                />
+                <form>
+                  <div class="form-group">
+                    <label for="comentario1">Deja tu comentario:</label>
+                    <textarea
+                      class="form-control"
+                      id="comentario1"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </div>
+            </div>
+            <hr />
+            <hr />
+            <!-- Tarjeta 2 -->
+            <div class="card my-4">
+              <div class="card-body">
+                <h5 class="card-title">Título de la tarjeta 2</h5>
+                <p class="card-text">Texto o descripción de la tarjeta 2.</p>
+                <img
+                  src="fresas.jpg"
+                  alt="Imagen de la tarjeta 2"
+                  class="img-fluid"
+                />
+
+                <form>
+                  <div class="form-group">
+                    <label for="comentario2">Deja tu comentario:</label>
+                    <textarea
+                      class="form-control"
+                      id="comentario2"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <!-- Columna derecha -->
+        <div class="col-lg-3 scrollable">
+          <h2>Productores</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Juan</td>
+                <td>Pérez</td>
+              </tr>
+              <tr>
+                <td>María</td>
+                <td>García</td>
+              </tr>
+              <tr>
+                <td>Carlos</td>
+                <td>Ruiz</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

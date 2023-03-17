@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>FRONT WEB APP</title>
+    <style>
+      .card {
+        margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
+      }
+
+      .card-img-top {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .card-text {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .container {
+        max-width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+      }
+
+      .col-lg-6 {
+        max-width: 50%;
+        flex: 0 0 50%;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/300x200"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Planta 1</h5>
+              <p class="card-text">Descripción de la planta 1.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/300x200"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Planta 2</h5>
+              <p class="card-text">Descripción de la planta 2.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/300x200"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Planta 3</h5>
+              <p class="card-text">Descripción de la planta 3.</p>
+            </div>
+          </div>
+          <!-- Repite este código para cada una de las 15 plantas -->
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/300x200"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Planta 4</h5>
+              <p class="card-text">Descripción de la planta 4.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/300x200"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Planta 5</h5>
+              <p class="card-text">Descripción de la planta 5.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/300x200"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Planta 6</h5>
+              <p class="card-text">Descripción de la planta 6.</p>
+            </div>
+          </div>
+          <!-- Repite este código para cada una de las 15 plantas -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
